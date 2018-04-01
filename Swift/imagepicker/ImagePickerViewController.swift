@@ -34,7 +34,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func loadImageButtonTapped(_ sender: UIButton) {
         imagePicker.allowsEditing = false
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
         
         present(imagePicker, animated: true, completion: nil)
     }
@@ -70,10 +70,10 @@ extension ViewController {
             let errorObj: JSON = json["error"]
             
             self.spinner.stopAnimating()
-            self.imageView.isHidden = true
-            self.labelResults.isHidden = false
+            self.imageView.isHidden = false //was true
+            self.labelResults.isHidden = true//was false
             self.classificationResults.isHidden = false
-            self.faceResults.isHidden = false
+            self.faceResults.isHidden = true //was false
             self.faceResults.text = ""
             
             // Check for errors
@@ -204,7 +204,7 @@ extension ViewController {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView.contentMode = .scaleAspectFit
-            imageView.isHidden = true // You could optionally display the image here by setting imageView.image = pickedImage
+            imageView.image = pickedImage
             spinner.startAnimating()
             faceResults.isHidden = true
             labelResults.isHidden = true
