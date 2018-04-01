@@ -33,6 +33,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func loadImageButtonTapped(_ sender: UIButton) {
+        classificationResults.isHidden = true
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .camera
         
