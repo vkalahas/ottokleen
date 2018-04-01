@@ -158,7 +158,7 @@ extension ViewController {
                 // definitions
                 var recycling = ["chip bag", "water bottle", "glass bottle", "plastic bag", "soda can", "snack bag", "plastic bottle", "plastic container", "rigid plastic", "paper", "cardboard", "cereal box", "snack box", "magazine", "mail", "office paper", "newspaper", "tin can", "aluminum can", "steel can", "glass container", "glass jar", "beer bottle", "wine bottle", "liquor bottle", "shredded paper", "box"]
                 
-                var compost = ["fruit waste", "vegetable waste", "apple", "orange", "pear", "banana", "broccoli", "twig", "grass", "old bread", "donut", "cookie", "cracker", "pizza crust", "noodle", "grain", "rice", "barley", "coffee", "ground", "tea bag", "fruit", "pulp", "vegetable pulp", "egg shell", "corn cob", "corn husk"]
+                var compost = ["fruit waste", "vegetable waste", "apple", "orange", "pear", "banana", "broccoli", "twig", "grass", "old bread", "donut", "cookie", "cracker", "pizza crust", "noodle", "grain", "rice", "barley", "coffee", "ground", "tea bag", "fruit", "pulp", "vegetable pulp", "egg shell", "corn cob", "corn husk", "pizza", "pepperoni", "pizza cheese", "food", "cuisine", "french fries", "peel", "vegetarian food", "bread", "vegetable scraps", "egg", ]
                 
                 var trash = ["plastic stretch wrap", "stretch wrap", "egg carton", "take out container", "drinking cup", "broken glass", "sharp glass", "fast food packaging", "plastic utensil", "food waste", "garden hose", "light bulb", "soiled bag", "soiled container", "animal feces", "toy"]
                 
